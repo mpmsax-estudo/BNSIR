@@ -1,0 +1,122 @@
+FreeCodeCamp-Explanations 
+
+#Only some topics, the most interesting 
+
+-Basic HTML and HTML5 28/28-
+
+Link to External Pages with Anchor Elements
+	<a href="https://freecodecamp.org">this links to freecodecamp.org</a>
+
+Link to Internal Sections of a Page with Anchor Elements
+	<a href="#contacts-header">Contacts</a>
+	...
+	<h2 id="contacts-header">Contacts</h2>
+	
+Nest an Anchor Element within a Paragraph
+	<p>
+	  Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+	</p>
+
+Make Dead Links Using the Hash Symbol
+	<a href="#" target="_blank">cat photos</a>
+
+Use HTML5 to Require a Field
+
+Create a Set of Radio Buttons
+
+Create a Set of Checkboxes
+
+Use the value attribute with Radio Buttons and Checkboxes
+
+Check Radio Buttons and Checkboxes by Default
+
+Nest Many Elements within a Single div Element
+
+Declare the Doctype of an HTML Document
+
+-Basic CSS 44/44-
+
+Import a Google Font
+
+Specify How Fonts Should Degrade
+
+Add Borders Around Your Elements
+
+Add Rounded Corners with border-radius
+
+Make Circular Images with a border-radius
+
+Give a Background Color to a div Element
+
+Set the id of an Element
+
+Use an id Attribute to Style an Element
+
+Adjust the Padding of an Element
+
+Adjust the Margin of an Element
+
+Add a Negative Margin to an Element
+
+Add Different Padding to Each Side of an Element
+
+Add Different Margins to Each Side of an Element
+
+Use Clockwise ation to Specify the Padding of an Element
+
+Use Clockwise ation to Specify the Margin of an Element
+
+Use Attribute Selectors to Style Elements
+
+Understand Absolute versus Relative Units
+
+Style the HTML Body Element
+
+Inherit Styles from the Body Element
+
+Prioritize One Style Over Aher
+
+Override Styles in Subsequent CSS
+
+Override Class Declarations by Styling ID Attributes
+
+Override Class Declarations with Inline Styles
+
+Override All Other Styles by using Important
+
+-Importance of overriding, order Higher to Lower:
+	0. Using !important - color: red !important;
+	1. Inline styling
+	2. ID
+	3. Last declared class take place of the above classes, intependend of the order of the values
+	All these can be used together. 
+	!important -> In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use !important
+
+-Cores:
+	HEX -> #000000 or #000
+	RGB -> rgb(0, 0, 0)
+
+-Use CSS Variables to change several elements at once
+
+-CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.-
+
+--penguin-skin: black;
+
+.penguin-top {
+  	...
+    background: var(--penguin-skin, gray);
+	...
+}
+
+.penguin-bottom {
+  	...
+    background: var(--penguin-skin, gray);
+  	...
+}
+
+Inherit CSS Variables
+	:root is a pseudo-class selector that matches the root element of the document, usually the html element. By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.
+
+	Change a variable for a specific area
+
+Use a media query to change a variable
